@@ -1,40 +1,102 @@
-# Zomato Data Analysis
+# 🍽️ Zomato Data Analysis Project
 
-## Project Overview
-This project is based on analyzing Zomato restaurant data to understand restaurant trends, customer preferences, ratings, and pricing patterns.
+## 📌 Objective
+The goal of this project is to analyze restaurant data and uncover patterns in ratings, cost, and customer engagement.
 
-## Objectives
-- Clean and preprocess raw Zomato data
-- Explore useful restaurant insights
-- Analyze ratings and price-related patterns
-- Perform basic data visualization
+---
 
-## Tools & Technologies Used
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook / Google Colab
+## 📂 Dataset
+The dataset contains information about restaurants including:
+- Name of restaurant  
+- Online ordering availability  
+- Table booking facility  
+- Ratings  
+- Number of votes  
+- Approximate cost for two people  
+- Restaurant type  
 
-## Files Included
-- `Zomato_Data_Analysis.ipynb` → Complete project notebook
-- `cleaned_zomato.csv.csv` → Cleaned dataset used for analysis
-- `zomato.csv.csv` → Original raw dataset
+---
 
-## Work Done
-- Data cleaning
-- Handling missing values
-- Exploratory data analysis (EDA)
-- Basic visualizations
-- Insight generation
+## 🧹 Data Cleaning
+Performed the following steps to clean the dataset:
+- Removed missing (null) values  
+- Converted ratings from text (e.g., "4.1/5") to numeric format  
+- Cleaned cost column by removing commas and converting to numbers  
+- Removed duplicate records  
 
-## Learning Outcome
-Through this project, I improved my understanding of:
-- data preprocessing
-- data analysis using Python
-- working with CSV datasets
-- using visualization libraries for insights
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+The following analysis was performed:
+
+### 1. Online Order vs Rating
+Analyzed whether restaurants offering online ordering have better ratings.
+
+### 2. Table Booking vs Rating
+Compared ratings of restaurants with and without table booking.
+
+### 3. Cost vs Rating
+Studied relationship between restaurant pricing and ratings.
+
+### 4. Votes vs Rating
+Checked if more popular restaurants (higher votes) have better ratings.
+
+### 5. Restaurant Type Distribution
+Analyzed the distribution of different types of restaurants.
+
+---
+
+## 📸 Visualizations
+
+![Online vs Rating](images/online_vs_rating.png)
+
+![Table Booking](images/table_booking.png)
+
+![Cost vs Rating](images/cost_vs_rating.png)
+
+![Votes vs Rating](images/votes_vs_rating.png)
+
+![Restaurant Type](images/restaurant_type.png)
+
+---
+
+## 🔍 Key Insights
+- Restaurants offering online ordering tend to have better ratings  
+- Table booking restaurants are generally premium and highly rated  
+- Higher cost does not guarantee better ratings  
+- Restaurants with more votes are usually more popular and better rated  
+- Most restaurants fall under a few dominant categories  
+
+---
+
+## 🛠️ Tools & Technologies
+- Python  
+- Pandas  
+- Matplotlib  
+- Google Colab  
+
+---
+
+## 📁 Project Structure
+Zomato-Data-Analysis/ 
+│ 
+├── data/ 
+│    └── clean_zomato.csv 
+├── notebook/ 
+│   └── zomato_analysis.ipynb 
+├── images/ 
+│   ├── online_vs_rating.png 
+│   ├── table_booking.png 
+│   ├── cost_vs_rating.png 
+│   ├── votes_vs_rating.png 
+│   └── restaurant_type.png 
+├── README.md
+
+---
+
+## 🚀 Conclusion
+This project demonstrates how raw data can be cleaned, analyzed, and transformed into meaningful insights using data analysis techniques.
 
 ## Author
 Jhanvi Narayan
